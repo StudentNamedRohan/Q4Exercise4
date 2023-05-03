@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <title>Q4 | Exercise 4</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="converter.js"></script>
+  </head>
+  <body>
+    <div class="container">
+    <h2>Measurement Converter</h2>
+    <div class="form-group">
+      <label for="inputValue">Enter a value:</label>
+      <input type="text" class="form-control" id="inputValue">
+    </div>
+    <div class="form-group">
+      <label for="selectFrom">From:</label>
+      <select class="form-control" id="selectFrom">
+        <option value="cm">Centimeter</option>
+        <option value="inch">Inch</option>
+        <option value="ft">Foot</option>
+        <option value="m">Meter</option>
+        <option value="km">Kilometer</option>
+        <option value="mile">Mile</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="selectTo">To:</label>
+      <select class="form-control" id="selectTo">
+        <option value="cm">Centimeter</option>
+        <option value="inch">Inch</option>
+        <option value="ft">Foot</option>
+        <option value="m">Meter</option>
+        <option value="km">Kilometer</option>
+        <option value="mile">Mile</option>
+      </select>
+    </div>
+    <button type="button" class="btn btn-primary" onclick="convert()">Convert</button>
+    <div class="form-group">
+      <label for="outputValue">Result:</label>
+      <input type="text" class="form-control" id="outputValue" readonly>
+    </div>
+  </div>
+</body>
+</html>
